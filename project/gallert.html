@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@import 'undo.css';
+		@import 'style.css';
+		img {
+			width: 100%;
+			height: auto;
+
+		}
+		.gallery{
+			display: flex;
+			flex-w rap: wrap;
+			
+			margin: 2rem auto;
+			width: 100%;
+
+		}
+		.column{
+			width: calc(25% - 1rem);
+			flex: calc(25% - 1rem);
+			
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			padding: 0 0.5rem;
+			gap: 10px;
+		}
+
+		.column > img{
+			transition: 0.4s ease-in-out;
+			margin-top: 10px;
+
+		}
+
+		.column > img:hover {
+
+			transform: scale(1.1);
+			filter: saturate(200%);
+		}
+	</style>
+</head>
+<body>
+<header>
+		<nav>
+			<a href="index.html" >Главная</a>
+			<a href="">Автор</a>
+			<a href="gallert.html" class="active">Галерея</a>
+	
+
+		</nav> 
+		<div class="header_img_container">
+			<img src="bun-bread.png" >
+		</div>
+
+	</header>	
+	<div class="gallery">
+		<div class="column"><img src="1.jpg"><img src="34.jpg"></div>
+
+		<div class="column"><img src="3635.jpg"><img src="3629.jpg"></div>
+
+		<div class="column"><img src="2.jpg"><img src="3636.jpg"></div>
+		
+<div class="column"><img src="456.jpg"><img src="3633.jpg"></div>
+
+
+
+	</div>
+	<footer>
+	<div class="footer-conteiner">
+		<h3>Ссылки на социальные сети</h3>
+
+        <div class="icons-container">
+        	<img src="https://cdn.iconscout.com/icon/free/png-256/vk-15-885573.png" alt="">
+        </div>
+
+        <p>Copyright &copy 2022 Stefania Avdeeva</p>
+	</div>
+</footer>
+</body>
+</html>
